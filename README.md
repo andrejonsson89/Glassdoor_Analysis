@@ -14,15 +14,17 @@ Power Query -> top left -> remove duplicates (from 660 rows to 648 rows).
 
 ### Finding the Mode
 The long way: Duplicate Query -> remove nulls (-1 in this dataset) = 628 rows -> Group to count frequencies -> sort to find mode -> keep top row only -> Right-click -> Drill Down -> rename from ModeFinder to MostCommonHQ<br/>
-The short way: View tab -> tick "column profile" -> Right-click on biggest bar (New York, NY) -> copy -> Right-click on null bar (-1) -> replace values
+The short way: View tab -> tick "column profile" -> Right-click on biggest bar (New York, NY) -> copy -> Right-click on null bar (-1) -> replace values<br/>
 ![Replacing with Mode](https://github.com/user-attachments/assets/25608e26-02b7-4f6a-8d79-54334253c43b)
 
 ### Finding the Median in an interval
-New Excel sheet -> pivot table to exclude categories and manual dragging sorting -> find median through cumulative count.
+New Excel sheet -> pivot table to exclude categories and manual dragging sorting -> find median through cumulative count.<br/>
+![Calculating the Median](https://github.com/user-attachments/assets/5af937e8-b3c7-40cf-84af-6453e8297cd3)
 
 ### Finding the Average
 The average in the column profile is skewed because -1 is a number that drags it down.<br/>
-Filter out the -1 rows, to find the average without those values, and then retrace and replace -1 with this value.
+Filter out the -1 rows, to find the average without those values, and then retrace and replace -1 with this value.<br/>
+![Finding the Average](https://github.com/user-attachments/assets/1c99d8f1-469e-4ae9-8524-e3ad46fec66f)
 
 ### Onward
 Other text-based columns: copy the mode at column profile -> RC -1 -> paste<br/>
@@ -48,16 +50,20 @@ This gave 3 "Others" that can be viewed by filtering job title group and checkin
 I might not agree with these changes in order to keep a representaive dataset. Since no dates or indices has been associated with our current data, there will be a possibility for duplicate values that maybe shouldn't be removed (because one series of events could have happened twice). Substituting missing number values with an average can be fine but not if we're looking to create a normal distribution visualization for those values. I'm less okay with substituting missing string values with the mode since the company with top posts will simply just be even more outlier:ier. In some cases, the N/A or -1 vastly outweighed the other options and a generalisation might then give a false image. Also, I haven't named all tables and charts and titles appropriately. When I'm working on a real project, I would of course do this.
 
 ## Part 3: Data Visualization
+![Count of Data Jobs](https://github.com/user-attachments/assets/bc633815-d2fa-4c96-83e6-690988220842)
 
 ## Part 4: Advanced Analysis
 
 ### Conditional formatting
-Conditional formatting the cells with min_salary higher than 100k.
+Conditional formatting the cells with min_salary higher than 100k.<br/>
+![Conditional formatting](https://github.com/user-attachments/assets/97010687-7db3-4541-a8b1-08f39f03fa68)
 
 ### Top Companies
-I was interested in what companies offered the highest salary.
-We can just drag Company Name below avg_salary under rows in the pivot table.
+I was interested in what companies offered the highest salary.<br/>
+We can just drag Company Name below avg_salary under rows in the pivot table.<br/>
+![Top - average](https://github.com/user-attachments/assets/fdb7c480-ea11-436c-9fa3-2d678c7e37f4)
 
-We could do this for the salary estimate range as well with some easy tweaks:
-filter away by label filters -> begins with -> 2
+We could do this for the salary estimate range as well with some easy tweaks:<br/>
+filter away by label filters -> begins with -> 2<br/>
+![Top - range](https://github.com/user-attachments/assets/3ecb8a5d-c011-40f7-8a8f-c821bbb4d53b)
 
