@@ -15,7 +15,7 @@ Power Query -> top left -> remove duplicates (from 660 rows to 648 rows).
 ### Finding the Mode
 The long way: Duplicate Query -> remove nulls (-1 in this dataset) = 628 rows -> Group to count frequencies -> sort to find mode -> keep top row only -> Right-click -> Drill Down -> rename from ModeFinder to MostCommonHQ<br/>
 The short way: View tab -> tick "column profile" -> Right-click on biggest bar (New York, NY) -> copy -> Right-click on null bar (-1) -> replace values
-<img width="304" height="85" alt="Replacing with Mode" src="https://github.com/user-attachments/assets/ed0a0b95-cc06-4d23-a3ca-8b9b81f26453" />
+![Replacing with Mode](https://github.com/user-attachments/assets/25608e26-02b7-4f6a-8d79-54334253c43b)
 
 ### Finding the Median in an interval
 New Excel sheet -> pivot table to exclude categories and manual dragging sorting -> find median through cumulative count.
