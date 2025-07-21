@@ -1,7 +1,7 @@
 # Glassdoor_Analysis
 I go over some interesting facts in the Glassdoor Dataset.
 
-I followed the [Data Science Hive](https://www.datasciencehive.com/data-analyst-path) website's [Homework 2.1](https://docs.google.com/document/d/1FWrl4_E5qdsv9dsHOAu5jbgGQ6zjMB2JFZN-yoRUIoo/edit?tab=t.0#heading=h.dhat3tnlvtlz) questions involving the [Glassdoor Dataset](https://www.kaggle.com/datasets/rashikrahmanpritom/data-science-job-posting-on-glassdoor?select=Uncleaned_DS_jobs.csv).
+I used the [Data Science Hive](https://www.datasciencehive.com/data-analyst-path) website's [Homework 2.1](https://docs.google.com/document/d/1FWrl4_E5qdsv9dsHOAu5jbgGQ6zjMB2JFZN-yoRUIoo/edit?tab=t.0#heading=h.dhat3tnlvtlz) questions involving the [Glassdoor Dataset](https://www.kaggle.com/datasets/rashikrahmanpritom/data-science-job-posting-on-glassdoor?select=Uncleaned_DS_jobs.csv).
 
 For the same reason as with my previous project, I've decided to use Power Query instead of basic Excel functions.<br/>
 Excel functions are easier to use but I wanted to practice using Power Query since it can handle a greater dataset.
@@ -15,6 +15,7 @@ Power Query -> top left -> remove duplicates (from 660 rows to 648 rows).
 ### Finding the Mode
 The long way: Duplicate Query -> remove nulls (-1 in this dataset) = 628 rows -> Group to count frequencies -> sort to find mode -> keep top row only -> Right-click -> Drill Down -> rename from ModeFinder to MostCommonHQ<br/>
 The short way: View tab -> tick "column profile" -> Right-click on biggest bar (New York, NY) -> copy -> Right-click on null bar (-1) -> replace values
+<img width="304" height="85" alt="Replacing with Mode" src="https://github.com/user-attachments/assets/ed0a0b95-cc06-4d23-a3ca-8b9b81f26453" />
 
 ### Finding the Median in an interval
 New Excel sheet -> pivot table to exclude categories and manual dragging sorting -> find median through cumulative count.
