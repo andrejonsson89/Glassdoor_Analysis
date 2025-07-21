@@ -9,7 +9,7 @@ Excel functions are easier to use but I wanted to practice using Power Query sin
 ## Part 1 & 2: Data Cleaning & Data Wrangling
 
 ### Handle missing data
-missing values (average/mode), duplicates, standardize text.<br/>
+missing values (average/mode), duplicates, standardize text<br/>
 Power Query -> top left -> remove duplicates (from 660 rows to 648 rows).
 
 ### Finding the Mode
