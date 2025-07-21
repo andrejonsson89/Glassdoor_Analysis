@@ -15,6 +15,7 @@ Power Query -> top left -> remove duplicates (from 660 rows to 648 rows).
 ### Finding the Mode
 The long way:<br/>
 Duplicate Query -> remove nulls (-1 in this dataset) = 628 rows -> Group to count frequencies -> sort to find mode -> keep top row only -> Right-click -> Drill Down -> rename from ModeFinder to MostCommonHQ<br/>
+<br/>
 The short way:<br/>
 View tab -> tick "column profile" -> Right-click on biggest bar (New York, NY) -> copy -> Right-click on null bar (-1) -> replace values<br/>
 ![Replacing with Mode](https://github.com/user-attachments/assets/25608e26-02b7-4f6a-8d79-54334253c43b)
