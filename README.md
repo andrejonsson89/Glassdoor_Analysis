@@ -36,7 +36,7 @@ Single number-based columns: remove -1 to unskew and replace with the true avera
 
 For the seniority column, I created a custom column to compare the Job Title with the seniority and all titles with senior or lead or sr or the like were accounted for in this column. So I assumed that the na in this column is jr instead of the mode (senior) bacause of the lack of that word's presence.
 
-There is a job_simp but I wanted to cleaning the job titles myself:
+There is a job_simp but I wanted to clean the job titles myself:
 ```
 let
     title = Text.Lower([Job Title])
