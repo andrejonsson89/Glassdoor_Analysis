@@ -47,10 +47,10 @@ in
     else if Text.Contains(title, "analyst") or Text.Contains(title, "analytic") then "Data Analyst"
     else "Other"
 ```
-This gave 3 "Others" that can be viewed by filtering job title group and checking corresponding job title.
+This gave 3 "Other"s that can be viewed by filtering job title group and checking corresponding job title.
 
 ### Reflection
-I might not agree with these changes in order to keep a representaive dataset. Since no dates or indices has been associated with our current data, there will be a possibility for duplicate values that maybe shouldn't be removed (because one series of events could have happened twice). Substituting missing number values with an average can be fine but not if we're looking to create a normal distribution visualization for those values. I'm less okay with substituting missing string values with the mode since the company with top posts will simply just be even more outlier:ier. In some cases, the N/A or -1 vastly outweighed the other options and a generalisation might then give a false image. Also, I haven't named all tables and charts and titles appropriately. When I'm working on a real project, I would of course do this.
+I might not agree with these changes in order to keep a representaive dataset. Since no dates or indices has been associated with our current data, there will be a possibility for duplicate values that maybe shouldn't be removed (because one series of events could have happened twice). Substituting missing number values with an average can be fine but not if we're looking to create a normal distribution visualization for those values. I'm more okay with substituting missing string values with the mode since the company with top posts will simply just be even more outlier:ier. In some cases, the N/A or -1 vastly outweighed the other options and a generalisation might then give a false image. Also, I haven't named all tables and charts and titles appropriately. When I'm working on a real project, I would of course do this.
 
 ## Part 3: Data Visualization
 ![Count of Data Jobs](https://github.com/user-attachments/assets/bc633815-d2fa-4c96-83e6-690988220842)
